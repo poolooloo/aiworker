@@ -1,0 +1,182 @@
+QWidget#widgetHeader
+{
+    border:1px solid grey;
+}
+
+
+QHeaderView::section::horizontal:first
+{
+    color:black;
+    height:30px;
+    font:12px "微软雅黑";
+/*    padding-bottom:10px;*/
+    /*padding-top:0px;
+    padding-left:10px;*/
+}
+
+QHeaderView::section::horizontal:middle
+{
+    color:black;
+    height:30px;
+    font:12px "微软雅黑";
+/*    padding-bottom:10px;*/
+    /*padding-top:0px;*/
+}
+
+QHeaderView::section::horizontal:last
+{
+    color:black;
+    height:30px;
+    font:12px "微软雅黑";
+/*    padding-bottom:10px;*/
+    /*padding-top:0px;*/
+}
+
+/*QAbstractItemView QHeaderView::item{
+    min-width:60px;
+    font:10px "微软雅黑";
+    text-align:center;
+}*/
+
+QHeaderView::section::vertical:first{
+    width:60px;
+    font:12px "微软雅黑";
+}
+QHeaderView::section::vertical:middle{
+    width:60px;
+    font:12px "微软雅黑";
+}
+QHeaderView::section::vertical:last{
+    width:60px;
+    font:12px "微软雅黑";
+}
+
+QTableCornerButton::section {
+    border-right: #969696;
+    background:grey;
+/*    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #DDD, stop: 1 #999);*/
+    height:30px;
+    margin-bottom:10px;
+}
+
+QPushButton[mainbtnColor="grey"]:checked
+{
+    color:rgb(255, 255, 255);
+    border:1px solid #946120;
+/*    background-color: #40372b;*/
+    background-color: #946120;
+}
+
+
+QPushButton[mainbtnColor="grey"]
+{
+    color:rgb(255, 255, 255);
+    border:1px solid #40372b;
+    background-color: grey;
+}
+
+QPushButton[mainbtnColor="yellow"]:checked
+{
+    color:rgb(255, 255, 255);
+    border:1px solid #946120;
+    background-color: #40372b;
+/*    background-color: #946120;*/
+}
+
+QPushButton#btnPositionTeach,#btnParamEdit
+{
+    border-radius:10px;
+}
+
+QPushButton[mainbtnColor="yellow"]
+{
+    color:rgb(255, 255, 255);
+    border:1px solid #40372b;
+    background-color: #946120;
+}
+
+QPushButton[mainbtnColor="blue"]:checked
+{
+    border-radius:25px;
+    color:rgb(255, 255, 255);
+    border:1px solid #946120;
+    background-color: #40372b;
+/*    background-color: #946120;*/
+}
+
+QPushButton[mainbtnColor="blue"]
+{
+    color:rgb(255, 255, 255);
+    border:1px solid #40372b;
+    background-color: green;
+    border-radius:25px;
+}
+
+/*// 设置垂直滚动条基本样式*/
+QScrollBar:vertical
+{
+    width:30px;
+    background:rgba(0,0,0,0%);
+    margin:0px,0px,0px,0px;
+    padding-top:50px;   /*// 留出50px给上面和下面的箭头*/
+    padding-bottom:30px;
+}
+QScrollBar::handle:vertical
+{
+    width:30px;
+    background:rgba(0,0,0,25%);
+    border-radius:10px;   /*// 滚动条两端变成椭圆*/
+    min-height:50;
+}
+QScrollBar::handle:vertical:hover
+{
+    width:20px;
+    background:rgba(0,0,0,50%);   /*// 鼠标放到滚动条上的时候，颜色变深*/
+    border-radius:4px;
+    min-height:20;
+}
+QScrollBar::add-line:vertical   /*// 这个是设置下箭头的，3.png就是箭头*/
+{
+    height:9px;width:8px;
+/*    background:red;*/
+/*    border-image:url(:/images/a/3.png);*/
+    subcontrol-position:bottom;
+}
+QScrollBar::sub-line:vertical   /*设置上箭头*/
+{
+    height:100px;
+    width:8px;
+    border-color:green;
+/*    background-color:red;*/
+    subcontrol-position:top;
+    subcontrol-origin:margin;
+}
+QScrollBar::add-line:vertical:hover   /*// 当鼠标放到下箭头上的时候*/
+{
+    height:9px;width:8px;
+/*    background:red;*/
+    subcontrol-position:bottom;
+}
+
+QScrollBar::up-arrow:vertical {
+    subcontrol-position:top;
+    subcontrol-origin:margin;
+    min-height: 50px;
+    border:0 0 0 0;
+/*    background:red;*/
+/*    border-image: url(:images/6.png);*/
+}
+QScrollBar::sub-line:vertical:hover  /*当鼠标放到下箭头上的时候*/
+{
+    height:9px;width:8px;
+/*    background:red;*/
+    subcontrol-position:top;
+}
+QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical   /*// 当滚动条滚动的时候，上面的部分和下面的部分*/
+{
+    background:rgba(0,0,0,0);
+    border-radius:4px;
+}
+
+
+
