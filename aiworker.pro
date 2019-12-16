@@ -5,4 +5,6 @@ SUBDIRS += \
     css \
     speech \
     ocr \
+    screenshot \
+    systray \
     main
